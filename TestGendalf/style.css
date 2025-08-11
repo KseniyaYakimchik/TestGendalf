@@ -1,0 +1,685 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: rgba(102, 102, 102, 1);
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Кнопки*/
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    margin: center;
+}
+
+.btn__header{
+    background-color: none;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.btn__header:hover{
+    text-decoration: underline;
+}
+
+.btn__green {
+    background-color: rgb(132, 196, 36);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+}
+
+.btn__green:hover{
+    background-color: green;
+    color: white;
+}
+
+.btn__antigreen{
+    background-color: white;
+    color:  rgb(132, 196, 36);
+    border: 2px solid rgb(132, 196, 36);
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+}
+
+.btn__antigreen:hover{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+.btn__blue {
+    background-color: rgba(0, 183, 236, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+}
+
+.btn__blue:hover {
+    background-color: rgb(0, 112, 187);
+    color: white;
+}
+
+.btn__antiblue {
+    background-color: white;
+    color: rgba(0, 183, 236, 1);
+    border: 2px solid rgba(0, 183, 236, 1);
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+}
+
+.btn__antiblue:hover {
+    background-color: white; 
+    color: rgb(0, 112, 187);
+    border: 2px solid rgb(0, 112, 187);
+}
+
+/*Кнопки на мобильном*/
+.btn-mobile{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    margin: center;                                                 
+}
+
+.btn__green-mobile {
+    background-color: rgb(132, 196, 36);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+    display: block;
+    width: 90%;
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+.btn__green-mobile:hover{
+    background-color: green;
+    color: white;
+}
+
+.btn__antigreen-mobile{
+    background-color: white;
+    color:  rgb(132, 196, 36);
+    border: 2px solid rgb(132, 196, 36);
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+    display: block;
+    width: 90%;
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+.btn__antigreen-mobile:hover{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+.btn__blue-mobile {
+    background-color: rgba(0, 183, 236, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+    display: block;
+    width: 90%;
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+.btn__blue-mobile:hover {
+    background-color: rgb(0, 112, 187);
+    color: white;
+}
+
+.btn__antiblue-mobile {
+    background-color: white;
+    color: rgba(0, 183, 236, 1);
+    border: 2px solid rgba(0, 183, 236, 1);
+    padding: 10px 20px;
+    border-radius: 1cap;
+    white-space: nowrap;
+    display: block;
+    width: 90%;
+    font-size: 50px;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+.btn__antiblue-mobile:hover {
+    background-color: white; 
+    color: rgb(0, 112, 187);
+    border: 2px solid rgb(0, 112, 187);
+}
+
+/*Шапка*/
+
+.header {
+    background-color: rgba(0, 183, 236, 1);
+    top: 0;
+    z-index: 1000;
+    padding: 1px;
+    position: sticky;
+}
+
+.nav-list {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-item {
+    color: #ffffff;
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 0;
+}
+
+/*Шапка на мобильном*/
+
+.header-mobile {
+    display: none;
+}
+
+.header-mobile .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-buttons {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+/*Начальный экран*/
+
+.hero {
+    background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)),url('image/smoke.png'), url('image/bg.png');
+    background-position: auto;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+/*Начальный экран на мобильном*/
+
+.hero-mobile {
+    display: none; 
+    background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)),url('image/smoke.png'), url('image/bg-mob.png');
+    background-position: auto;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-title-mobile {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.hero-text-mobile {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+/*О том, чем мы занимаемся*/
+
+.about{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 20px;
+}
+
+.about-title{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+}
+
+.about-text{
+    margin: 5px;
+    margin-bottom: 20px;
+    color: rgba(102, 102, 102, 1);
+    flex: 1;    
+}
+
+.about-image{
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 300px;
+}
+
+/*О том, чем мы занимаемся на мобильном   */
+
+.about-mobile{
+    display: none; 
+
+    align-items: center;
+    gap: 10rem;
+    padding: 20px;
+}
+
+.about-title-mobile{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 5rem;
+}
+
+.about-text-mobile{
+    margin: 5px;
+    margin-bottom: 20px;
+    color: rgba(102, 102, 102, 1);
+    flex: 1;    
+}
+
+/*Ценности...*/
+.values{
+    gap: 10rem;
+    padding: 20px;
+    background-color: rgba(233, 233, 233, 1); 
+}
+
+.values-title{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.values-image-scroll{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 15px 0;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+
+.values img{
+    scroll-snap-align: start;
+    width: auto;
+    height: auto;
+    max-width: none;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.values-item{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+}
+
+.values-item:hover {
+    transform: translateY(-5px);
+}
+
+.values-title-text{
+    flex-direction: column;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+    text-decoration: underline;
+}
+
+.values-text{
+    flex-direction: column;
+    text-align: center;
+    color: rgba(102, 102, 102, 1);
+    padding-right: 20px;
+}
+
+.values-title-mobile{
+    display: none;
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*Инструктора...*/
+.instructors{
+    background: linear-gradient(to bottom, rgba(40, 228, 115, 0.16), rgba(70, 205, 22, 0.14), rgba(39, 221, 209, 0.39), rgba(5, 176, 213, 0.32));
+    display: flex;
+    gap: 3rem;
+    padding: 20px;
+}
+
+.instructors-title{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    text-align: center;
+}
+
+.instructors-text{
+    width: 70%;
+    margin: 5px;
+    margin-left: 20px;
+    color: rgba(102, 102, 102, 1);
+    flex: 1;
+    text-align: start;
+    font-size: 18px;
+}
+
+.instructors-image{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*Инструктора... на мобильном*/
+.instructors-mobile{
+    display: none;
+    background: linear-gradient(to bottom, rgba(40, 228, 115, 0.16), rgba(70, 205, 22, 0.14), rgba(39, 221, 209, 0.39), rgba(5, 176, 213, 0.32));
+    gap: 3rem;
+    padding: 20px;
+}
+
+.instructors-text-mobile{
+    width: 100%;
+    margin: 5px;
+    margin-left: 20px;
+    color: rgba(102, 102, 102, 1);
+    flex: 1;
+    text-align: start;
+    font-size: 18px;
+}
+
+.instructors-image-mobile{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*Лента новостей*/
+
+.news{
+    background-color: rgba(233, 233, 233, 1);
+}
+
+.news-title{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.news-feed {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    scroll-behavior: smooth; 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.news-card {
+    width: 80px;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgb(144, 229, 255));
+    box-shadow:#555;
+    display: inline-flex; 
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-text {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: none;
+    color: rgba(102, 102, 102, 1);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background: white;
+}
+
+/*Вопросы*/
+.question{
+    background: linear-gradient(to bottom, rgba(40, 228, 115, 0.16), rgba(70, 205, 22, 0.14), rgba(39, 221, 209, 0.39), rgba(5, 176, 213, 0.32));
+    float: left;
+}
+
+.question-img{
+    background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)),url('image/smokeQt.png'), url('image/bgQt.png');
+    background-position: auto;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.question-image-title{
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+.question-title{
+    color: rgba(0, 183, 236, 1);
+    font-weight: normal;
+    padding: 20px;
+}
+
+.question-image-title-mobile{
+    display: none;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.qstn{
+    float: left;
+    width: 70%;
+    padding-bottom: 10px;
+    position: absolute;
+    opacity: 0;
+}
+
+.qstn:checked +.qstn-text{
+    color: rgba(0, 183, 236, 1);
+    text-decoration: underline;
+}
+
+.qstn-image{
+    padding-right: 50px;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    float: right; 
+}
+
+.qstn-text{
+    display:inline-block;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    width: 70%;
+}
+
+.qstn-text i{
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-image: url(image/arrRight.png);
+    background-repeat: no-repeat;
+    background-color: transparent;  
+}
+
+.qstn:checked + .qstn-text i{
+    background-image: url(image/arrDown.png);
+    background-repeat: no-repeat;
+    background-color: transparent;  
+}
+
+.qstn-text:hover{
+    background: none;
+    color: rgba(0, 183, 236, 1);
+    text-decoration: underline;
+}
+
+.qstn-answ{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.qstn:checked ~.qstn-answ{
+    max-height: 300px;
+    padding: 20px; 
+    padding-left: 70px;
+    width: 60%;
+}
+
+/*Вопросы на мобильном*/
+
+.question-mobile{
+    display: none;
+    background: linear-gradient(to bottom, rgba(40, 228, 115, 0.16), rgba(70, 205, 22, 0.14), rgba(39, 221, 209, 0.39), rgba(5, 176, 213, 0.32));
+    float: left;
+}
+
+@media (max-width: 1000px) {
+    .header, .hero, .about, .values-title, .instructors, .question-image-title, .question{
+        display: none;
+    }
+    
+    .header-mobile, .hero-mobile, .about-mobile, .values-title-mobile, .instructors-mobile, .question-image-title-mobile, .question-mobile {
+        display: block; 
+    }
+}
+/*
+*/
